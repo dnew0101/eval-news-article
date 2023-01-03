@@ -1,0 +1,43 @@
+$errorColor: #c100006a;
+$main-color: #ffffff;
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border-radius: 3px;
+    padding: 40px;
+}
+
+input {
+    padding: 5px 20px;
+    width: auto;
+    line-height: 16px;
+    margin: 10px 0;
+}
+
+.errorColor {
+    background-color: $errorColor;
+    box-shadow: 2px 2px 30px black;
+}
+#output {
+    padding: 20px;
+}
+#center-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+#results {
+    border: 1px solid #ffffff00;
+    border-radius: 3px;
+}
+@media screen and (max-width: 700px) {
+    #center-div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}

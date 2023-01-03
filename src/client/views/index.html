@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>"Evaluate News With Natural Language Processing"</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/f2f57f1ec6.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <main>
+            <section>
+                <header>
+                    <div class="title">
+                        <h1>Sentiment Analysis</h1>
+                    </div>
+                </header>
+                <form>
+                    <input id="url" type="text" name="input" value="" placeholder="Enter URL">
+                    <input id="btn" type="button" value="Submit">
+                </form>
+            </section>
+
+            <section id="output">
+                <div class="formTitle"><h2><strong>Form Results...</strong></h2></div>
+                <div id="results">
+                    <div class="display" id="error"></div>
+                    <div id="center-div">
+                        <div class="display" id="polarity"></div>
+                        <div class="display" id="subjectivity"></div>
+                        <div class="display" id="agreement"></div>
+                        <div class="display" id="confidence"></div>
+                        <div class="display" id="irony"></div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+
+        <!--Learned about Font Awesome icons from ChatGPT!!-->
+        <footer>
+            <nav id="fnav">
+            <a href="#"><i class="fa-solid fa-house"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-discord"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            </nav>
+        </footer>
+        <script>
+            if ('serviceWorker' in navigator) {
+                window.addEventListener('load', () => {
+                    navigator.serviceWorker.register('/service-worker.js');
+                });
+            }
+           </script>
+    </body>
+</html>

@@ -1,0 +1,43 @@
+$display-nodes: #6f6f6fe7;
+footer {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 25px;
+    width: 100%;
+    background-color: $display-nodes;
+    justify-content: center;
+}
+#fnav {
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    width: 30%;
+}
+i.fa {
+    font-size: 1.25em;
+}
+@media (max-width: 700px) {
+    footer {
+        display: flex;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 75px;
+        width: 100%;
+        background-color: $display-nodes;
+        justify-content: center;
+    }
+    #fnav {
+        height: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        width: 50%;
+    }
+    i.fa {
+        font-size: 2em;
+    }
+}

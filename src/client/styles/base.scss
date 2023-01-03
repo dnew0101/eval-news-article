@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400&display=swap');
+
+//variables
+$display-nodes: #a4a4a4b5;
+$main-font: 'Lato', sans-serif;
+body {
+    background: url(../image/pexels-background.jpeg) no-repeat center;
+    background-size: cover;
+    font-family: $main-font;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+main {
+    flex: 1;
+}
+.formTitle {
+    padding-left: 15px;
+}
+.display {
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    border-radius: 3px;
+}
+section {
+    background-color: $display-nodes;
+    box-shadow: 5px 5px 20px black;
+    width: 70%;
+    max-width: 70%;
+    min-height: 200px;
+    margin: 50px auto;
+    border-radius: 5px;
+}
+
+@media (max-width: 700px) {
+    body {
+        align-items: center;
+    }
+}
